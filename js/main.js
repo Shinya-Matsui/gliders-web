@@ -106,7 +106,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     if (dist < MAX_DIST) {
                         var alpha = (1 - dist / MAX_DIST) * 0.18;
                         ctx.beginPath();
-                        ctx.strokeStyle = 'rgba(96, 165, 250, ' + alpha + ')';
+                        ctx.strokeStyle = 'rgba(37, 99, 235, ' + alpha + ')';
                         ctx.lineWidth = 0.8;
                         ctx.moveTo(particles[i].x, particles[i].y);
                         ctx.lineTo(particles[j].x, particles[j].y);
@@ -119,7 +119,7 @@ document.addEventListener('DOMContentLoaded', function () {
             particles.forEach(function (p) {
                 ctx.beginPath();
                 ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
-                ctx.fillStyle = 'rgba(147, 197, 253, 0.35)';
+                ctx.fillStyle = 'rgba(37, 99, 235, 0.2)';
                 ctx.fill();
             });
 
