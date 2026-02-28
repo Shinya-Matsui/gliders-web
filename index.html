@@ -186,32 +186,81 @@
         </section>
 
         <!-- Products -->
-        <section class="section" id="products">
+        <section class="section section-alt" id="products">
             <canvas class="section-bg-canvas" data-particle></canvas>
             <div class="section-inner">
                 <div class="reveal">
                     <span class="section-label">Products</span>
                     <h2 class="section-title">プロダクト</h2>
-                    <p class="section-desc">専門知識を凝縮した、本格的な学習支援ツールを提供しています。</p>
+                    <p class="section-desc">専門知識を凝縮した、自社開発の学習プラットフォームを運営しています。</p>
                 </div>
-                <div class="product-card-single reveal">
-                    <div class="service-card product-featured">
-                        <div class="service-icon">
-                            <i class="fas fa-shield-halved"></i>
+
+                <!-- Gliders Learn Platform -->
+                <div class="product-platform reveal">
+                    <div class="platform-header">
+                        <div class="platform-brand">
+                            <span class="platform-logo">Gliders<span class="platform-dot">.</span> <span class="platform-learn">Learn</span></span>
+                            <span class="platform-badge">学習プラットフォーム</span>
                         </div>
-                        <div>
-                            <span class="product-label">情報セキュリティマネジメント試験 科目A対策</span>
-                            <h3>SG試験対策クイズ</h3>
-                            <p>情報処理安全確保支援士（RISS）が監修した全155問の本格クイズアプリ。5カテゴリで試験範囲を完全網羅。詳細な解説付きで、なぜその答えなのかを深く理解できます。</p>
-                            <div class="product-meta">
-                                <span class="product-tag">🆓 30問無料</span>
-                                <span class="product-tag">📱 スマホ・PC対応</span>
-                                <span class="product-tag">💳 全問 ¥980</span>
-                            </div>
-                            <a href="https://learn.gliders.co.jp/sg/" target="_blank" rel="noopener" class="product-cta">
-                                <i class="fas fa-arrow-right"></i>
-                                無料で試してみる
+                        <p class="platform-desc">情報処理安全確保支援士（RISS）が監修する実践的な学習コンテンツプラットフォーム。試験対策に特化したクイズアプリを中心に、質の高い教育コンテンツを提供しています。</p>
+                        <div class="platform-features">
+                            <span class="platform-feature"><i class="fas fa-shield-halved"></i> RISS監修</span>
+                            <span class="platform-feature"><i class="fas fa-mobile-screen-button"></i> マルチデバイス対応</span>
+                            <span class="platform-feature"><i class="fas fa-coins"></i> 買い切り・サブスクなし</span>
+                        </div>
+                        <a href="https://learn.gliders.co.jp/" target="_blank" rel="noopener" class="platform-cta">
+                            <i class="fas fa-external-link-alt"></i>
+                            learn.gliders.co.jp
+                        </a>
+                    </div>
+
+                    <div class="platform-courses">
+                        <h4 class="courses-heading"><i class="fas fa-layer-group"></i> 提供コンテンツ</h4>
+                        <div class="courses-list">
+                            <a href="https://learn.gliders.co.jp/sg/" target="_blank" rel="noopener" class="course-item course-active">
+                                <div class="course-icon-wrap">
+                                    <i class="fas fa-shield-halved"></i>
+                                </div>
+                                <div class="course-info">
+                                    <div class="course-top">
+                                        <span class="course-status status-live">公開中</span>
+                                        <span class="course-category">情報セキュリティマネジメント試験 科目A対策</span>
+                                    </div>
+                                    <h5>SG試験対策クイズ</h5>
+                                    <p>RISS監修の本格クイズアプリ。詳細な解説付きで、なぜその答えなのかを深く理解できます。</p>
+                                    <div class="course-stats">
+                                        <span>全215問</span>
+                                        <span>7カテゴリ</span>
+                                        <span>42問無料</span>
+                                        <span>全問 ¥980</span>
+                                    </div>
+                                </div>
+                                <div class="course-arrow">
+                                    <i class="fas fa-arrow-right"></i>
+                                </div>
                             </a>
+
+                            <div class="course-item course-upcoming">
+                                <div class="course-icon-wrap upcoming">
+                                    <i class="fas fa-laptop-code"></i>
+                                </div>
+                                <div class="course-info">
+                                    <span class="course-status status-upcoming">準備中</span>
+                                    <h5>ITパスポート試験対策</h5>
+                                    <p>Coming Soon</p>
+                                </div>
+                            </div>
+
+                            <div class="course-item course-upcoming">
+                                <div class="course-icon-wrap upcoming">
+                                    <i class="fas fa-microchip"></i>
+                                </div>
+                                <div class="course-info">
+                                    <span class="course-status status-upcoming">準備中</span>
+                                    <h5>基本情報技術者試験対策</h5>
+                                    <p>Coming Soon</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -289,11 +338,7 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="footer-links">
-            <a href="https://learn.gliders.co.jp/" target="_blank" rel="noopener">学習コンテンツ</a>
-            <a href="https://learn.gliders.co.jp/sg/" target="_blank" rel="noopener">SG試験対策クイズ</a>
-        </div>
-        <p>&copy; 2026 Gliders LLC. All rights reserved.</p>
+        <p>&copy; 2026 グライダーズ合同会社 / Gliders LLC</p>
     </footer>
 
     <script src="js/main.js"></script>
