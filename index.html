@@ -186,81 +186,52 @@
         </section>
 
         <!-- Products -->
-        <section class="section section-alt" id="products">
-            <canvas class="section-bg-canvas" data-particle></canvas>
+        <section class="section section-products" id="products">
             <div class="section-inner">
                 <div class="reveal">
                     <span class="section-label">Products</span>
-                    <h2 class="section-title">プロダクト</h2>
-                    <p class="section-desc">専門知識を凝縮した、自社開発の学習プラットフォームを運営しています。</p>
+                    <div class="products-badge">自社開発 学習プラットフォーム</div>
+                    <div class="products-brand">
+                        <span class="products-logo">Gliders<span class="products-dot">.</span></span>
+                        <span class="products-learn">Learn</span>
+                    </div>
+                    <p class="products-desc">情報処理安全確保支援士（RISS）が監修する実践的な学習コンテンツプラットフォーム。<br>試験対策に特化したクイズアプリを中心に、質の高い教育コンテンツを提供しています。</p>
+                    <div class="products-features">
+                        <span><i class="fas fa-shield-halved"></i> RISS監修</span>
+                        <span><i class="fas fa-mobile-screen-button"></i> マルチデバイス対応</span>
+                        <span><i class="fas fa-coins"></i> 買い切り・サブスクなし</span>
+                    </div>
+                    <a href="https://learn.gliders.co.jp/" target="_blank" rel="noopener" class="products-cta">
+                        <i class="fas fa-arrow-right"></i>
+                        学習コンテンツを見る
+                    </a>
                 </div>
 
-                <!-- Gliders Learn Platform -->
-                <div class="product-platform reveal">
-                    <div class="platform-header">
-                        <div class="platform-brand">
-                            <span class="platform-logo">Gliders<span class="platform-dot">.</span> <span class="platform-learn">Learn</span></span>
-                            <span class="platform-badge">学習プラットフォーム</span>
-                        </div>
-                        <p class="platform-desc">情報処理安全確保支援士（RISS）が監修する実践的な学習コンテンツプラットフォーム。試験対策に特化したクイズアプリを中心に、質の高い教育コンテンツを提供しています。</p>
-                        <div class="platform-features">
-                            <span class="platform-feature"><i class="fas fa-shield-halved"></i> RISS監修</span>
-                            <span class="platform-feature"><i class="fas fa-mobile-screen-button"></i> マルチデバイス対応</span>
-                            <span class="platform-feature"><i class="fas fa-coins"></i> 買い切り・サブスクなし</span>
-                        </div>
-                        <a href="https://learn.gliders.co.jp/" target="_blank" rel="noopener" class="platform-cta">
-                            <i class="fas fa-external-link-alt"></i>
-                            learn.gliders.co.jp
+                <div class="products-courses reveal">
+                    <h4 class="products-courses-heading"><i class="fas fa-layer-group"></i> 提供コンテンツ</h4>
+                    <div class="products-courses-grid">
+                        <a href="https://learn.gliders.co.jp/sg/" target="_blank" rel="noopener" class="pcourse pcourse-active">
+                            <div class="pcourse-icon"><i class="fas fa-shield-halved"></i></div>
+                            <span class="pcourse-status pcourse-live">公開中</span>
+                            <h5>SG試験対策クイズ</h5>
+                            <p class="pcourse-sub">情報セキュリティマネジメント試験 科目A対策</p>
+                            <div class="pcourse-stats">
+                                <span>全215問</span>
+                                <span>7カテゴリ</span>
+                                <span>42問無料</span>
+                            </div>
                         </a>
-                    </div>
-
-                    <div class="platform-courses">
-                        <h4 class="courses-heading"><i class="fas fa-layer-group"></i> 提供コンテンツ</h4>
-                        <div class="courses-list">
-                            <a href="https://learn.gliders.co.jp/sg/" target="_blank" rel="noopener" class="course-item course-active">
-                                <div class="course-icon-wrap">
-                                    <i class="fas fa-shield-halved"></i>
-                                </div>
-                                <div class="course-info">
-                                    <div class="course-top">
-                                        <span class="course-status status-live">公開中</span>
-                                        <span class="course-category">情報セキュリティマネジメント試験 科目A対策</span>
-                                    </div>
-                                    <h5>SG試験対策クイズ</h5>
-                                    <p>RISS監修の本格クイズアプリ。詳細な解説付きで、なぜその答えなのかを深く理解できます。</p>
-                                    <div class="course-stats">
-                                        <span>全215問</span>
-                                        <span>7カテゴリ</span>
-                                        <span>42問無料</span>
-                                        <span>全問 ¥980</span>
-                                    </div>
-                                </div>
-                                <div class="course-arrow">
-                                    <i class="fas fa-arrow-right"></i>
-                                </div>
-                            </a>
-
-                            <div class="course-item course-upcoming">
-                                <div class="course-icon-wrap upcoming">
-                                    <i class="fas fa-laptop-code"></i>
-                                </div>
-                                <div class="course-info">
-                                    <span class="course-status status-upcoming">準備中</span>
-                                    <h5>ITパスポート試験対策</h5>
-                                    <p>Coming Soon</p>
-                                </div>
-                            </div>
-
-                            <div class="course-item course-upcoming">
-                                <div class="course-icon-wrap upcoming">
-                                    <i class="fas fa-microchip"></i>
-                                </div>
-                                <div class="course-info">
-                                    <span class="course-status status-upcoming">準備中</span>
-                                    <h5>基本情報技術者試験対策</h5>
-                                    <p>Coming Soon</p>
-                                </div>
-                            </div>
+                        <div class="pcourse pcourse-upcoming">
+                            <div class="pcourse-icon"><i class="fas fa-laptop-code"></i></div>
+                            <span class="pcourse-status pcourse-soon">準備中</span>
+                            <h5>ITパスポート試験対策</h5>
+                            <p class="pcourse-sub">Coming Soon</p>
+                        </div>
+                        <div class="pcourse pcourse-upcoming">
+                            <div class="pcourse-icon"><i class="fas fa-microchip"></i></div>
+                            <span class="pcourse-status pcourse-soon">準備中</span>
+                            <h5>基本情報技術者試験対策</h5>
+                            <p class="pcourse-sub">Coming Soon</p>
                         </div>
                     </div>
                 </div>

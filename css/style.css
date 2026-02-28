@@ -718,330 +718,289 @@ body {
 }
 
 /* ========================================
-   Products Section
+   Products Section — Dark Hero Style
+   (Mirrors Gliders Learn hero design)
 ======================================== */
 
-/* Platform Container */
-.product-platform {
-    background: var(--card-glass);
-    border: 1px solid var(--card-glass-border);
-    border-radius: var(--radius);
-    overflow: hidden;
-    max-width: 900px;
-    margin: 0 auto;
-}
-
-/* Platform Header */
-.platform-header {
-    background: linear-gradient(135deg, #0f172a 0%, #1e3a5f 50%, #1e40af 100%);
-    padding: 2.5rem;
+/* Dark full-bleed section */
+.section-products {
+    background: #0f2440;
     position: relative;
     overflow: hidden;
 }
 
-.platform-header::before {
+/* Decorative gradient orbs */
+.section-products::before {
     content: '';
     position: absolute;
-    top: -60px;
-    right: -40px;
-    width: 200px;
-    height: 200px;
-    background: radial-gradient(circle, rgba(96, 165, 250, 0.12) 0%, transparent 70%);
+    top: -120px;
+    right: -60px;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(96, 165, 250, 0.08) 0%, transparent 70%);
     border-radius: 50%;
+    pointer-events: none;
 }
 
-.platform-header::after {
+.section-products::after {
     content: '';
     position: absolute;
-    bottom: -40px;
-    left: 20%;
-    width: 160px;
-    height: 160px;
-    background: radial-gradient(circle, rgba(37, 99, 235, 0.1) 0%, transparent 70%);
+    bottom: -100px;
+    left: 5%;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(37, 99, 235, 0.06) 0%, transparent 70%);
     border-radius: 50%;
+    pointer-events: none;
 }
 
-.platform-brand {
+/* Override section-label/title colors for dark bg */
+.section-products .section-label {
+    color: #60a5fa;
+}
+
+/* Products badge — mirrors Learn hero-badge */
+.products-badge {
+    display: inline-block;
+    padding: 0.35rem 1rem;
+    background: rgba(37, 99, 235, 0.2);
+    border: 1px solid rgba(96, 165, 250, 0.3);
+    border-radius: 100px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 1.5rem;
+}
+
+/* Brand — large type, mirrors Learn header */
+.products-brand {
     display: flex;
-    align-items: center;
-    gap: 12px;
+    align-items: baseline;
+    gap: 0.5rem;
     margin-bottom: 1rem;
-    position: relative;
-    z-index: 1;
 }
 
-.platform-logo {
+.products-logo {
     font-family: var(--font-display);
-    font-size: 1.6rem;
+    font-size: 2.75rem;
     font-weight: 700;
     color: #ffffff;
     letter-spacing: -0.02em;
 }
 
-.platform-dot {
+.products-dot {
     color: #60a5fa;
 }
 
-.platform-learn {
+.products-learn {
     font-family: var(--font-display);
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: 600;
     color: #60a5fa;
     letter-spacing: 0.5px;
 }
 
-.platform-badge {
-    display: inline-block;
-    background: rgba(59, 130, 246, 0.2);
-    color: #93c5fd;
-    font-size: 0.7rem;
-    font-weight: 600;
-    padding: 3px 12px;
-    border-radius: 9999px;
-    border: 1px solid rgba(59, 130, 246, 0.3);
-    letter-spacing: 0.05em;
-}
-
-.platform-desc {
-    color: #cbd5e1;
-    font-size: 0.9rem;
+/* Description — mirrors Learn hero-desc */
+.products-desc {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1.05rem;
     line-height: 1.8;
-    margin-bottom: 1.25rem;
-    position: relative;
-    z-index: 1;
-    max-width: 640px;
+    margin-bottom: 1.5rem;
+    max-width: 600px;
 }
 
-.platform-features {
+/* Feature pills */
+.products-features {
     display: flex;
-    gap: 16px;
+    gap: 1.5rem;
     flex-wrap: wrap;
-    margin-bottom: 1.25rem;
-    position: relative;
-    z-index: 1;
+    margin-bottom: 2rem;
 }
 
-.platform-feature {
+.products-features span {
     display: inline-flex;
     align-items: center;
     gap: 6px;
-    font-size: 0.8rem;
+    font-size: 0.85rem;
     color: #94a3b8;
 }
 
-.platform-feature i {
+.products-features i {
     color: #60a5fa;
-    font-size: 0.75rem;
 }
 
-.platform-cta {
+/* CTA button — mirrors Learn hero-cta */
+.products-cta {
     display: inline-flex;
     align-items: center;
-    gap: 8px;
-    color: #93c5fd;
-    text-decoration: none;
-    font-size: 0.85rem;
-    font-weight: 500;
-    transition: var(--transition);
-    position: relative;
-    z-index: 1;
-}
-
-.platform-cta:hover {
+    gap: 0.5rem;
+    padding: 0.9rem 2rem;
+    background: var(--accent);
     color: #ffffff;
+    text-decoration: none;
+    border-radius: var(--radius-sm);
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: var(--transition);
 }
 
-.platform-cta i {
-    font-size: 0.7rem;
+.products-cta:hover {
+    background: #1d4ed8;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(37, 99, 235, 0.4);
 }
 
-/* Course Listing */
-.platform-courses {
-    padding: 2rem 2.5rem 2.5rem;
+/* Course listing area */
+.products-courses {
+    margin-top: 3.5rem;
+    padding-top: 2.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
 
-.courses-heading {
+.products-courses-heading {
     font-size: 0.8rem;
     font-weight: 600;
-    color: var(--text-muted);
+    color: #60a5fa;
     letter-spacing: 0.1em;
-    margin-bottom: 1rem;
+    margin-bottom: 1.25rem;
     display: flex;
     align-items: center;
     gap: 8px;
 }
 
-.courses-heading i {
-    color: var(--accent);
-    font-size: 0.85rem;
-}
-
-.courses-list {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-}
-
-/* Course Item */
-.course-item {
-    display: flex;
-    align-items: center;
+.products-courses-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
-    padding: 1.25rem;
-    border: 1px solid var(--border);
+}
+
+/* Course card — glass on dark */
+.pcourse {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: 12px;
-    transition: var(--transition);
+    padding: 1.5rem;
     text-decoration: none;
     color: inherit;
+    transition: var(--transition);
 }
 
-.course-item.course-active {
-    border-color: rgba(37, 99, 235, 0.2);
-    background: rgba(37, 99, 235, 0.02);
+.pcourse-active {
+    border-color: rgba(96, 165, 250, 0.2);
+    background: rgba(255, 255, 255, 0.06);
 }
 
-.course-item.course-active:hover {
-    border-color: var(--accent);
-    background: rgba(37, 99, 235, 0.04);
-    transform: translateY(-2px);
-    box-shadow: 0 8px 30px rgba(37, 99, 235, 0.1);
+.pcourse-active:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(96, 165, 250, 0.4);
+    transform: translateY(-4px);
+    box-shadow: 0 10px 40px rgba(37, 99, 235, 0.15);
 }
 
-.course-item.course-upcoming {
-    opacity: 0.6;
+.pcourse-upcoming {
+    opacity: 0.45;
 }
 
-.course-icon-wrap {
-    flex-shrink: 0;
+.pcourse-icon {
     width: 48px;
     height: 48px;
-    background: var(--accent-light);
-    border: 1px solid rgba(37, 99, 235, 0.15);
+    background: rgba(37, 99, 235, 0.15);
+    border: 1px solid rgba(96, 165, 250, 0.2);
     border-radius: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 1.2rem;
-    color: var(--accent);
+    color: #60a5fa;
+    margin-bottom: 1rem;
 }
 
-.course-icon-wrap.upcoming {
-    background: #f1f5f9;
-    border-color: var(--border);
-    color: var(--text-muted);
+.pcourse-upcoming .pcourse-icon {
+    background: rgba(255, 255, 255, 0.04);
+    border-color: rgba(255, 255, 255, 0.1);
+    color: #64748b;
 }
 
-.course-info {
-    flex: 1;
-    min-width: 0;
-}
-
-.course-top {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    margin-bottom: 4px;
-}
-
-.course-status {
+.pcourse-status {
     display: inline-block;
     font-size: 0.65rem;
     font-weight: 600;
-    padding: 2px 8px;
+    padding: 2px 10px;
     border-radius: 9999px;
     letter-spacing: 0.05em;
+    margin-bottom: 8px;
 }
 
-.status-live {
-    background: #dcfce7;
-    color: #16a34a;
-    border: 1px solid rgba(22, 163, 74, 0.2);
+.pcourse-live {
+    background: rgba(22, 163, 74, 0.15);
+    color: #4ade80;
+    border: 1px solid rgba(22, 163, 74, 0.25);
 }
 
-.status-upcoming {
-    background: #f1f5f9;
-    color: var(--text-muted);
-    border: 1px solid var(--border);
+.pcourse-soon {
+    background: rgba(255, 255, 255, 0.05);
+    color: #64748b;
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.course-category {
-    font-size: 0.7rem;
-    color: var(--text-muted);
-}
-
-.course-info h5 {
-    font-size: 1rem;
+.pcourse h5 {
+    font-size: 1.05rem;
     font-weight: 600;
-    color: var(--text);
+    color: #ffffff;
     margin-bottom: 4px;
 }
 
-.course-info p {
+.pcourse-sub {
     font-size: 0.8rem;
-    color: var(--text-light);
+    color: #94a3b8;
     line-height: 1.6;
 }
 
-.course-stats {
+.pcourse-stats {
     display: flex;
-    gap: 12px;
+    gap: 8px;
     flex-wrap: wrap;
-    margin-top: 8px;
+    margin-top: 12px;
 }
 
-.course-stats span {
-    font-size: 0.75rem;
-    color: var(--accent);
+.pcourse-stats span {
+    font-size: 0.7rem;
+    color: #93c5fd;
     font-weight: 500;
-    background: var(--accent-light);
+    background: rgba(37, 99, 235, 0.15);
+    border: 1px solid rgba(96, 165, 250, 0.2);
     padding: 2px 8px;
     border-radius: 4px;
 }
 
-.course-arrow {
-    flex-shrink: 0;
-    color: var(--accent);
-    font-size: 0.9rem;
-    transition: var(--transition);
-}
-
-.course-active:hover .course-arrow {
-    transform: translateX(4px);
-}
-
 /* Products Responsive */
-@media (max-width: 768px) {
-    .platform-header {
-        padding: 2rem 1.5rem;
+@media (max-width: 968px) {
+    .products-courses-grid {
+        grid-template-columns: 1fr;
     }
 
-    .platform-courses {
-        padding: 1.5rem;
-    }
-
-    .platform-brand {
+    .products-brand {
         flex-direction: column;
-        align-items: flex-start;
-        gap: 8px;
+        gap: 0.25rem;
     }
 
-    .platform-features {
-        flex-direction: column;
-        gap: 8px;
+    .products-logo {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .products-logo {
+        font-size: 1.8rem;
     }
 
-    .course-item {
+    .products-learn {
+        font-size: 1.2rem;
+    }
+
+    .products-features {
         flex-direction: column;
-        align-items: flex-start;
         gap: 0.75rem;
-        padding: 1rem;
-    }
-
-    .course-arrow {
-        align-self: flex-end;
-    }
-
-    .course-stats {
-        gap: 6px;
     }
 }
