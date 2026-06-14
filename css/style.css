@@ -867,6 +867,74 @@ body {
     box-shadow: 0 8px 30px rgba(37, 99, 235, 0.4);
 }
 
+/* 先行導入パートナー募集 告知 */
+.products-campaign {
+    margin-top: 2.25rem;
+    padding: 1.5rem 1.75rem;
+    background: rgba(37, 99, 235, 0.12);
+    border: 1px solid rgba(96, 165, 250, 0.35);
+    border-radius: var(--radius-sm);
+    max-width: 600px;
+}
+
+.campaign-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #93c5fd;
+    margin-bottom: 0.75rem;
+}
+
+.campaign-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #22c55e;
+    box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.6);
+    animation: campaignPulse 2s infinite;
+}
+
+@keyframes campaignPulse {
+    0% { box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.6); }
+    70% { box-shadow: 0 0 0 8px rgba(34, 197, 94, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(34, 197, 94, 0); }
+}
+
+.campaign-text {
+    color: rgba(255, 255, 255, 0.82);
+    font-size: 0.95rem;
+    line-height: 1.75;
+    margin-bottom: 1.1rem;
+}
+
+.campaign-text strong {
+    color: #ffffff;
+}
+
+.campaign-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.7rem 1.5rem;
+    background: transparent;
+    color: #93c5fd;
+    border: 1px solid #60a5fa;
+    border-radius: var(--radius-sm);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: var(--transition);
+}
+
+.campaign-cta:hover {
+    background: var(--accent);
+    color: #ffffff;
+    border-color: var(--accent);
+    transform: translateY(-2px);
+}
+
 /* Course listing area */
 .products-courses {
     margin-top: 3.5rem;
