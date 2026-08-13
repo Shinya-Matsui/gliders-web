@@ -1,0 +1,22 @@
+# Cloudflare Workers Assets の配信対象から除外するファイル
+# wrangler.jsonc の assets.directory が "./" のため、
+# 明示的に除外しないとリポジトリの管理ファイルまで公開される。
+# 記法は .gitignore と同じ。このファイル自身はアップロードされない。
+
+# リポジトリ管理ファイル（サイトの構成要素ではない）
+README.md
+package.json
+package-lock.json
+wrangler.jsonc
+.gitignore
+
+# 開発用ツール・デバッグ成果物
+screenshot-*.js
+screenshot-*.png
+
+# 内部作業ディレクトリ
+plans/
+
+# 以下は wrangler が既定で除外するが、意図を明示するため記載
+.git/
+node_modules/
