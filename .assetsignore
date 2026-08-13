@@ -1,0 +1,25 @@
+# wrangler.jsonc の assets.directory が "./" なので、
+# リポジトリのファイルは既定でそのまま配信される。
+# 配信してはいけないものをここで除外する（smats-public の .assetsignore と同じ方針）。
+
+# リポジトリ運用ファイル
+README.md
+package.json
+package-lock.json
+wrangler.jsonc
+.assetsignore
+.gitignore
+node_modules/
+
+# 開発用スクリプト・作業成果物
+screenshot-*.js
+screenshot-*.png
+plans/
+
+# エージェント向けメモ（claude-mem の文脈などが入る）
+CLAUDE.md
+**/CLAUDE.md
+AGENTS.md
+**/AGENTS.md
+.claude/
+.github/

@@ -913,6 +913,21 @@ body {
     color: #ffffff;
 }
 
+/* 事実の開示（注意喚起ではないので警告色は使わない） */
+.campaign-note {
+    color: rgba(255, 255, 255, 0.72);
+    font-size: 0.85rem;
+    line-height: 1.7;
+    margin-bottom: 1.1rem;
+    padding-top: 0.9rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.campaign-note strong {
+    color: rgba(255, 255, 255, 0.92);
+    font-weight: 600;
+}
+
 .campaign-cta {
     display: inline-flex;
     align-items: center;
