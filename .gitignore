@@ -4,3 +4,10 @@ desktop.ini
 .vscode/
 .idea/
 node_modules/
+
+# ビルド成果物（build.sh が生成）
+dist/
+
+# claude-mem が自動生成する作業メモ。配信対象でもリポジトリの構成要素でもない
+CLAUDE.md
+**/CLAUDE.md

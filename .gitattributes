@@ -1,0 +1,4 @@
+# シェルスクリプトは必ず LF で保存する。
+# CRLF のまま Linux（Cloudflare Pages のビルド環境）へ渡ると
+# `bad interpreter: /bin/sh^M` でビルドが落ちるため。
+*.sh text eol=lf

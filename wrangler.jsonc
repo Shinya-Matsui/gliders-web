@@ -1,7 +1,9 @@
 {
+  // Cloudflare Pages プロジェクト設定。
+  // 配信対象は build.sh が dist/ に組み立てる（allowlist 方式）。
+  // リポジトリ直下を直接配信すると README.md や package.json まで公開されるため、
+  // ここを "./" に戻してはいけない。
   "name": "gliders-web",
   "compatibility_date": "2026-02-17",
-  "assets": {
-    "directory": "./"
-  }
+  "pages_build_output_dir": "./dist"
 }
