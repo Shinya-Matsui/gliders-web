@@ -20,6 +20,9 @@ mkdir -p "$OUT"
 # 404.html を置くと Pages が不明なパスに対して 404 ステータスで返す
 cp index.html 404.html favicon.svg llms.txt robots.txt sitemap.xml "$OUT/"
 
+# Pages の設定ファイル（配信はされず、ヘッダー定義として解釈される）
+cp _headers "$OUT/"
+
 # 配信するディレクトリ
 cp -R css js assets "$OUT/"
 
