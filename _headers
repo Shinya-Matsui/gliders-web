@@ -1,0 +1,10 @@
+# Cloudflare Pages のカスタムヘッダー定義。
+# build.sh が dist/ にコピーする。Pages はこのファイルを設定として読み取り、
+# 静的ファイルとしては配信しない。
+#
+# 注意: ファイル名にコンテンツハッシュを付けていないため、長すぎる max-age は
+# 差し替え時に古い版が残り続ける原因になる。画像のみ控えめに延長し、
+# CSS / JS は既定（max-age=14400）のままとする。
+
+/assets/*
+  Cache-Control: public, max-age=86400, stale-while-revalidate=604800
