@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 404 ページ自体は検索結果に出さない -->
+    <meta name="robots" content="noindex, follow">
+    <title>ページが見つかりません | グライダーズ合同会社</title>
+
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+
+    <style>
+        .nf {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 2rem 1.5rem;
+            background: var(--section-bg);
+        }
+        .nf-code {
+            font-family: var(--font-display);
+            font-size: clamp(4rem, 14vw, 8rem);
+            font-weight: 700;
+            line-height: 1;
+            color: var(--accent);
+            letter-spacing: 0.02em;
+        }
+        .nf-title {
+            font-family: var(--font-display);
+            font-size: clamp(1.25rem, 4vw, 1.75rem);
+            font-weight: 600;
+            color: var(--text);
+            margin: 1.5rem 0 0.75rem;
+        }
+        .nf-desc {
+            color: var(--text-light);
+            max-width: 34rem;
+            margin: 0 auto 2.5rem;
+        }
+        .nf-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+        }
+        .nf-btn {
+            display: inline-block;
+            padding: 0.9rem 2rem;
+            border-radius: 100px;
+            font-weight: 500;
+            text-decoration: none;
+            transition: var(--transition);
+        }
+        .nf-btn-primary {
+            background: var(--accent);
+            color: #fff;
+        }
+        .nf-btn-primary:hover {
+            background: var(--primary);
+        }
+        .nf-btn-ghost {
+            border: 1px solid var(--border);
+            color: var(--text);
+        }
+        .nf-btn-ghost:hover {
+            border-color: var(--accent);
+            color: var(--accent);
+        }
+        .nf-logo {
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--text);
+            text-decoration: none;
+            margin-bottom: 2rem;
+        }
+        .nf-logo span { color: var(--accent); }
+    </style>
+</head>
+<body>
+    <main class="nf">
+        <a href="/" class="nf-logo">Gliders<span>.</span></a>
+        <p class="nf-code">404</p>
+        <h1 class="nf-title">ページが見つかりません</h1>
+        <p class="nf-desc">
+            お探しのページは移動または削除された可能性があります。<br>
+            URLをご確認いただくか、下のリンクからお進みください。
+        </p>
+        <div class="nf-actions">
+            <a href="/" class="nf-btn nf-btn-primary">トップページへ</a>
+            <a href="https://learn.gliders.co.jp/" class="nf-btn nf-btn-ghost">Gliders Learn</a>
+            <a href="mailto:info@gliders.co.jp" class="nf-btn nf-btn-ghost">お問い合わせ</a>
+        </div>
+    </main>
+</body>
+</html>
