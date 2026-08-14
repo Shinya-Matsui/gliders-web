@@ -777,6 +777,8 @@ body {
 
 /* Products badge — mirrors Learn hero-badge */
 .products-badge {
+    /* h2 要素として使うため、ブラウザ既定の見出しマージンを打ち消す */
+    margin-top: 0;
     display: inline-block;
     padding: 0.35rem 1rem;
     background: rgba(37, 99, 235, 0.2);
@@ -943,6 +945,8 @@ body {
 }
 
 .products-courses-heading {
+    /* h3 要素として使うため、ブラウザ既定の見出しマージンを打ち消す */
+    margin-top: 0;
     font-size: 0.8rem;
     font-weight: 600;
     color: #60a5fa;
@@ -1028,10 +1032,11 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.pcourse h5 {
+.pcourse h4 {
     font-size: 1.05rem;
     font-weight: 600;
     color: #ffffff;
+    margin-top: 0;
     margin-bottom: 4px;
 }
 
